@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    h1=title
+    <form action="/new" method="POST">
+    label(for="messageUser")="Author" 
+        input(name="messageUser", type="text")
+    label(for="messageText")="Message"
+        input(name="messageText",  type="text")
+    button(type="submit")="Submit" 
+    </form>
